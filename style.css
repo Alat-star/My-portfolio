@@ -86,7 +86,8 @@ strong{
 
 /*  service botton */
 
-.btn{
+.btn,
+social-list__link{
   display: inline-block;
   padding: .5em 2.5em;
   background: var(--clr-accent);
@@ -102,30 +103,13 @@ strong{
 
 }
 
-#btn{
-   display: inline-block;
-  padding: .5em 2.5em;
-  background: var(--clr-accent);
-  color: var(--clr-dark);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: .8em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
-  border-radius: 2rem;
 
 
-}
-
-.btn:hover{
+.btn,
+social-list__link:hover{
   transform: scale(1.1);
 }
 
-#btn:hover{
-   transform: scale(1.1);
-}
 
 
 
@@ -510,14 +494,12 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2em;
 }
 
-.footer a {
-  color: inherit;
-  text-decoration: none
-  
-}
+
 .footer__link{
   font-size: var(--fs-h3);
   font-weight: var(--fw-bold);
+    color: inherit;
+  text-decoration: none;
 }
 
 .social-list__link:hover,
